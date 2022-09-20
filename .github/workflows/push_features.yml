@@ -1,0 +1,15 @@
+name: Push on feature branch
+
+on:
+  push:
+    branches:
+      - feat/*
+
+jobs:
+  print-event:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Print branch name
+        run: |
+          echo "Push on feature branch"

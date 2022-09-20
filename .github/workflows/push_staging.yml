@@ -1,0 +1,15 @@
+name: Push on staging branch
+
+on:
+  push:
+    branches:
+      - staging
+
+jobs:
+  print-event:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Print branch name
+        run: |
+          echo "Push on staging branch"
